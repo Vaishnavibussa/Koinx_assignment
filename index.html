@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + React</title>
+    <link rel="stylesheet" href="src/index.css">
+    <script src="ind.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <header class="header">
+      <h1>Crypto Dashboard</h1>
+      <nav>
+          <ul>
+              <li><a href="#">Market</a></li>
+              <li><a href="#">News</a></li>
+              <li><a href="#">Portfolio</a></li>
+          </ul>
+      </nav>
+  </header>
+
+  <!-- Main Container -->
+  <main class="container">
+      <!-- Left Section -->
+      <section class="content">
+          <!-- Chart Section -->
+          <div class="chart-section">
+              <h2>Bitcoin Price Chart</h2>
+              <canvas id="priceChart"></canvas>
+          </div>
+
+          <!-- Metrics Section -->
+          <div class="metrics">
+              <div class="metric-card">
+                  <p>Market Cap</p>
+                  <h3>$1.2 Trillion</h3>
+              </div>
+              <div class="metric-card">
+                  <p>24h Volume</p>
+                  <h3>$50 Billion</h3>
+              </div>
+          </div>
+      </section>
+
+      <!-- Sidebar Section -->
+      <aside class="sidebar">
+          <div class="trending-coins">
+              <h2>Trending Coins</h2>
+              <ul>
+                  <li>Bitcoin (BTC)</li>
+                  <li>Ethereum (ETH)</li>
+                  <li>Cardano (ADA)</li>
+              </ul>
+          </div>
+      </aside>
+  </main>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
